@@ -1,0 +1,53 @@
+/*  HEADER */
+header {
+  position: fixed;
+  top: 0px;
+  padding-top: 100px;
+  width: 100%;
+  background-color: #f8f8f8;
+  min-height: 80px;
+}
+nav {
+  position: relative;
+  max-width: 810px;
+  margin: 0px auto;
+  background-color: #f8f8f8;
+}
+.logo {
+  position: absolute;
+  left: 30px;
+  top: -40px;
+  width: 201px;
+  height: 126px;
+  background-image: url(logo.svg);
+  transform: scale(0.8);
+}
+.links {
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.links a {
+  width: 100px;
+  border: solid 2px #f8f8f8;
+  background-color: #1c17f2;
+  color: #f8f8f8;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-decoration: none;
+}
+a.signup {
+  background-color: #ff475d;
+}
+a.signup:hover {
+  border-color: #ff475d;
+  color: #ff475d;
+  background-color: #f8f8f8;
+}
+a.lookfor:hover {
+  border-color: #1c17f2;
+  color: #1c17f2;
+  background-color: #f8f8f8;
+}

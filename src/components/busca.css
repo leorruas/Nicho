@@ -1,0 +1,86 @@
+/* FORMULÁRIO HOME */
+fieldset {
+  margin: 0px;
+  border: none;
+}
+input,
+button,
+textarea {
+  margin: 0px;
+  border: 2px solid #1c17f2;
+  padding: 15px;
+  border-radius: 40px;
+  color: #1c17f2;
+  font-size: 90%;
+  outline: none;
+}
+input:focus,
+input:focus,
+textarea:focus {
+  border-color: #ff475d;
+}
+.form-home {
+  background-color: white;
+}
+.pesquisaHome {
+  margin-top: 70px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50fr 1fr;
+  column-gap: 3px;
+}
+.home-send {
+  background-image: url(search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-color: #ff475d;
+  background-color: #ff475d;
+}
+.home-send:hover {
+  background-color: #1c17f2;
+  border-color: #1c17f2;
+}
+::placeholder {
+  color: #1c17f2;
+  opacity: 1;
+}
+
+.advanced {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: right;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+.obrigado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.explore {
+  max-width: 400px;
+  display: block;
+  margin: 10px auto 0px;
+  background-color: #ff475d;
+  padding: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 80%;
+  text-align: center;
+}
+a.explore {
+  color: white;
+  border: 2px solid #f8f8f8;
+}
+a.explore:hover {
+  background-color: white;
+  color: #ff475d;
+  border-color: #ff475d;
+}
+.opening {
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* FIM FORMULÁRIO HOME */

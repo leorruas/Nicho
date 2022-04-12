@@ -1,0 +1,73 @@
+.tagline {
+  border-top: solid 2px #ff475d;
+  border-bottom: solid 2px #ff475d;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* SOBRE USUÁRIO */
+.sobre-vc {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+input.meio {
+  flex: 3;
+}
+
+/* SOBRE USUARIO E EMPRESA */
+.sobre-empresa h1,
+.sobre-vc h1 {
+  margin-bottom: 10px;
+}
+.sobre-empresa input,
+.sobre-vc input {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.sobre-empresa input:focus,
+.sobre-vc input:focus,
+.sobre-empresa textarea:focus {
+  border-color: #ff475d;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+/* SOBRE EMPRESA */
+.sobre-empresa {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  color: ;
+}
+.sobre-empresa textarea {
+  border-radius: 30px;
+  width: 100%;
+  color: #1c17f2;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 12pt;
+  background-color: #fff;
+  padding: 15px;
+  border: 2px solid #1c17f2;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.sobre-empresa button {
+  background-color: #ff475d;
+  border: #ff475d 2px solid;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 60px;
+  margin-left: 5px;
+}
+.sobre-empresa button:hover {
+  background-color: #fff;
+  color: #ff475d;
+  border: #ff475d 2px solid;
+}
+.enviar {
+}
