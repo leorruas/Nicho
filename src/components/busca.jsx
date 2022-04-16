@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import './busca.css'
 
 const Busca = () => {
@@ -15,7 +15,8 @@ const Busca = () => {
             </form>
             </fieldset>
             <div className="advanced">
-                <a> LISTA DE TODOS OS NEGÓCIOS</a>
+                <Link to='/todos'> LISTA DE TODOS OS NEGÓCIOS
+                </Link>
             </div>
         </div>
         )

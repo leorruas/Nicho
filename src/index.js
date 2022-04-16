@@ -15,6 +15,8 @@ import './index.css';
 import App from './App';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import Obrigado from './components/obrigado';
+import Todos from './components/todos';
 
 
 ReactDOM.render(
@@ -23,6 +25,8 @@ ReactDOM.render(
     <Route path="/" element={<App />} />
     <Route path="/signup" element={<Signup />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/obrigado" element={<Obrigado />} />
+    <Route path="/todos" element={<Todos />} />
   
   
   </Routes>
