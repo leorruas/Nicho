@@ -17,16 +17,18 @@
 }
 .dois {
  display: flex;
+ gap: 10px;
 }
 .flex {
     display: flex;
     gap: 5px;
 }
 .todos section .empresa {
-    min-width: 250px;
-    max-width: 300px;
     flex: 1;
-    margin-bottom:20px ;
+    margin-bottom:20px;
+}
+.todos section .empresa h1 {
+    font-size: 20px;
 }
 .todos section .empresa .distancia {
     color:#1c17f2;
