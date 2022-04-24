@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/header';
 import Busca from './components/busca';
-
+import Hamburguer from './components/hamburger';
 
 import {
   BrowserRouter,
@@ -21,6 +21,7 @@ const App = () => {
     <main>
       
     <Busca/>
+    <Hamburguer/>
   
 
   <div> 
