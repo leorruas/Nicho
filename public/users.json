@@ -1,0 +1,22 @@
+[
+  {
+    "username": "leoruas",
+    "email": "leoruas@gmail.com",
+    "empresa": "MJV Innovation & Technology",
+    "password": "12345",
+    "sobre": "MJV is a global technology and innovation consultancy, promoting end-to-end solutions, from ideation to IT implementation, bringing together design, analytics, and agile mindset to offer quality business resolutions. Transformation: We are on a trajectory of transformation, operating alongside leading global brands. MJV has already expanded to 10 offices in Europe, North America, and the Latam region, with operations in over 25 countries.",
+    "telefone": "(11)555-5555",
+    "website": "https://www.mjvinnovation.com",
+    "endereco": "Atlanta"
+  },
+  {
+    "username": "leo-stefanini",
+    "email": "contato@stefanini.com",
+    "empresa": "Stefanini",
+    "senha": "12345",
+    "sobre": "A Stefanini é uma multinacional brasileira que atua no setor de serviços em TI. Com um suporte em mais de 30 idiomas, a Stefanini, 5ª empresa mais internacionalizada, segundo a Fundação Dom Cabral, atua em mais de 35 países e e está entre as 100 maiores empresas de TI do mundo (BBC News). Uma das mais importantes provedoras globais de soluções de negócios baseadas em tecnologia oferece prestação de serviços em Consultoria, Integração, Desenvolvimento de Soluções, BPO, Outsourcing para Aplicativos e Infraestrutura, entre outras soluções.",
+    "telefone": "(11) 555-5555",
+    "website": "stefanini.com",
+    "endereco": "São Paulo"
+  }
+]

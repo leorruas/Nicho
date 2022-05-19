@@ -84,3 +84,19 @@ a.explore:hover {
   margin: 0 auto;
 }
 /* FIM FORMULÁRIO HOME */
+
+
+.naoEncontrado {
+  color:#ff475d;
+  font-weight: bold;
+  margin-left:15px;
+  font-size: 20px;
+
+
+}
+.naoEncontrado2 {
+  font-size: 13px;
+  /* text-transform: uppercase; */
+  margin-left: 15px;
+  margin-top: 5px;
+}

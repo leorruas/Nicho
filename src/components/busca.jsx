@@ -27,22 +27,36 @@ const Busca = () => {
     document.querySelector('.todos').appendChild(newSection);
   };
 
-  var db_clients = JSON.parse(localStorage.getItem('db_client'));
+  // var db_clients = JSON.parse(localStorage.getItem('db_client'));
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     document.querySelector('.todos').innerHTML = '';
     const busca = data.busca;
     const filtro = (clients) => {
-      const empresa = clients.empresa.toLowerCase();
+      const empresa =
+        clients.empresa.toLowerCase() + ' ' + clients.sobre.toLowerCase();
       if (empresa.includes(busca)) {
-        console.log(empresa);
+        // console.log(empresa);
         return empresa;
       }
     };
-    const resultadoBusca = db_clients.filter(filtro);
-    console.log(resultadoBusca);
-
-    resultadoBusca.forEach(renderAllClients);
+    const todos = fetch('./users.json')
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        // console.log(body);
+        const resultadoBusca = res.filter(filtro);
+        // console.log(resultadoBusca);
+        if (busca.length === 0) {
+          const naoEncontrado = document.querySelector('.todos');
+          naoEncontrado.innerHTML = `
+          <h3 class="naoEncontrado">Tente um novo termo!</h3>
+          <p class="naoEncontrado2">Nenhum resultado foi encontrar para sua busca :(</p>`;
+        } else {
+          resultadoBusca.forEach(renderAllClients);
+        }
+      });
   };
 
   return (
@@ -66,9 +80,7 @@ const Busca = () => {
         <Link to="/todos"> LISTA DE TODOS OS NEGÓCIOS</Link>
       </div>
 
-      <div className="todos">
-        {/* {resultadoBusca.map(renderAllClients)} */}
-      </div>
+      <div className="todos"></div>
     </div>
   );
 };
