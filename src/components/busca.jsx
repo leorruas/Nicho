@@ -26,8 +26,6 @@ const Busca = () => {
     `;
     document.querySelector('.todos').appendChild(newSection);
   };
-
-  // var db_clients = JSON.parse(localStorage.getItem('db_client'));
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     document.querySelector('.todos').innerHTML = '';
@@ -36,18 +34,15 @@ const Busca = () => {
       const empresa =
         clients.empresa.toLowerCase() + ' ' + clients.sobre.toLowerCase();
       if (empresa.includes(busca)) {
-        // console.log(empresa);
         return empresa;
       }
     };
-    const todos = fetch('./users.json')
+    const todos = fetch('http://localhost:5000/posts')
       .then((res) => {
         return res.json();
       })
       .then((res) => {
-        // console.log(body);
         const resultadoBusca = res.filter(filtro);
-        // console.log(resultadoBusca);
         if (busca.length === 0) {
           const naoEncontrado = document.querySelector('.todos');
           naoEncontrado.innerHTML = `

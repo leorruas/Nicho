@@ -26,38 +26,14 @@ const Todos = () => {
     `;
     document.querySelector('.todos').appendChild(newSection);
   };
-  const todos = fetch('./users.json')
+  const todos = fetch('http://localhost:5000/posts')
     .then((res) => {
       return res.json();
     })
     .then((res) => {
-      // console.log(body);
+      console.log(res);
       res.forEach(renderAllClients);
     });
-
-  // var allClients = JSON.parse(localStorage.getItem('db_client'));
-  // // console.log(allClients);
-  // const renderAllClients = (allClients, index) => {
-  //   return (
-  //     <>
-  //       <section>
-  //         <div className="dois">
-  //           <div className="empresa">
-  //             <h1>{allClients.empresa}</h1>
-  //             <p className="distancia">está há 2km de você</p>
-  //           </div>
-
-  //           <div className="sobre">{allClients.sobre}</div>
-  //         </div>
-  //         <div className="flex">
-  //           <div className="endereco">{allClients.endereco}</div>
-  //           <div className="contato">email: {allClients.email}</div>
-  //           <div className="contato">telefone: {allClients.telefone}</div>
-  //         </div>
-  //       </section>
-  //     </>
-  //   );
-  // };
 
   return (
     <>
@@ -66,7 +42,7 @@ const Todos = () => {
         <h1 className="titulo">
           Conheça todos os empreendimentos que fazem parte de nossa rede!
         </h1>
-        <div className="todos">{/* {allClients.map(renderAllClients)} */}</div>
+        <div className="todos"></div>
       </main>
       <Hamburguer />
     </>

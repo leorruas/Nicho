@@ -8,21 +8,7 @@ import './signup.css';
 import '../App.css';
 import Hamburguer from './hamburger';
 
-// const getLocalStorage = () => JSON.parse(localStorage.getItem('data')) ?? [];
-// const setLocalStorage = (data) => localStorage.setItem("data", JSON.stringify(data));
-
-// const createData = (data) => {
-//     const Data = getLocalStorage('data');
-//     setLocalStorage(Data);
-// }
-
 const Signup = () => {
-  //   const getLocalStorage = () =>
-  //     JSON.parse(localStorage.getItem('db_client')) ?? [];
-
-  //   const setLocalStorage = (dbClient) =>
-  //     localStorage.setItem('db_client', JSON.stringify(dbClient));
-
   const {
     register,
     formState: { errors },
@@ -30,27 +16,24 @@ const Signup = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const novoCadastro = JSON.stringify(data);
+    const novoCadastro = data;
     console.log(novoCadastro);
     const options = {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
     };
 
-    fetch('http://192.168.0.11:3000/users.json', options)
-      .then((response) => response.json())
+    fetch('http://localhost:5000/posts', options)
+      .then((res) => res.json())
       .then((json) => {
         console.log(json);
       });
-    // const dbClient = getLocalStorage();
-    // dbClient.push(data);
-    // setLocalStorage(dbClient);
-    // window.location.href = './obrigado';
+    window.location.href = './obrigado';
   };
-  //   const message = 'Campo obrigatório';
+
   return (
     <>
       <Header />

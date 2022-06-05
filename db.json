@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "empresa": "MJV Innovation & Technology",
+      "sobre": "MJV is a global technology and innovation consultancy, promoting end-to-end solutions, from ideation to IT implementation, bringing together design, analytics, and agile mindset to offer quality business resolutions. Transformation: We are on a trajectory of transformation, operating alongside leading global brands. MJV has already expanded to 10 offices in Europe, North America, and the Latam region, with operations in over 25 countries.",
+      "telefone": "(11)555-5555",
+      "website": "https://www.mjvinnovation.com",
+      "endereco": "Atlanta",
+      "id": "1",
+      "username": "leoruas",
+      "senha": "12345"
+    },
+    {
+      "id": 2,
+      "username": "leo-stefanini",
+      "email": "contato@stefanini.com",
+      "empresa": "Stefanini",
+      "senha": "12345",
+      "sobre": "A Stefanini é uma multinacional brasileira que atua no setor de serviços em TI. Com um suporte em mais de 30 idiomas, a Stefanini, 5ª empresa mais internacionalizada, segundo a Fundação Dom Cabral, atua em mais de 35 países e e está entre as 100 maiores empresas de TI do mundo (BBC News). Uma das mais importantes provedoras globais de soluções de negócios baseadas em tecnologia oferece prestação de serviços em Consultoria, Integração, Desenvolvimento de Soluções, BPO, Outsourcing para Aplicativos e Infraestrutura, entre outras soluções.",
+      "telefone": "(11) 555-5555",
+      "website": "stefanini.com",
+      "endereco": "São Paulo"
+    },
+    {
+      "username": "fantasy",
+      "email": "contact@fantasy.co",
+      "password": "12345",
+      "empresa": "Fantasy",
+      "sobre": "Fantasy is a human-centered product innovation team that ships premium products and ecosystems for the world’s most pioneering companies. Offices in New York, San Francisco, London.  Standing behind our work and innovating has been our new business model since 1999. Our partners purposely seek us out to ship flagship projects.  From Netflix to Masterclass, Ford to Mitsubishi, UFC to The Oscars, LG to Samsung, we believe in great partnerships and people who strive to go beyond ordinary.  Fantasy works across platforms including automotive, artificial intelligence, consoles to mobile operating systems and web. Clients include:  AI & Mobile OS: Huawei / LG / Palm / Polaroid / Samsung  Automotive & Mobility: Bell Flight / Ford / GAC / Mercedes / Mitsubishi / Tesla  Ecom: Harrods / Kohler / Mac / Walmart  Environment: Academy of Motion Pictures / Lucas Film / Royal Caribbean / The Met Museum  Finance: Chase / Citi Group  Health: 23andMe / Abbott / Cambia / Equinox / Novartis / Pfizer  Media: Audbile / CAA / Masterclass / Match / Netflix / Spotify / Tatlier / UFC / WME   Tech: Amazon / Facebook / Google / Indeed / Twitter",
+      "telefone": "+1 555 555-555",
+      "website": "http://fantasy.co",
+      "endereco": "NYC, NY",
+      "id": 3
+    }
+  ]
+}

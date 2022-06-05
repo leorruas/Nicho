@@ -19,10 +19,11 @@
   transform: scale(0.8);
 }
 
-.login input {
-  width: 100%;
+.login input, .login textarea {
+  width: 90%;
   margin-bottom: 5px;
 }
+
 .login button {
   background-color: #ff475d;
   border: #ff475d 2px solid;
@@ -53,4 +54,10 @@
 .login .register a:hover {
   background-color: #f8f8f8;
   color: #1c17f2;
+}
+.sumir {
+  display: none;
+}
+.editar {
+  width: 100%;
 }
